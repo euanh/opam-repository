@@ -12,7 +12,7 @@ depends: [
   "xapi-idl" {= "0.9.19"}
   "xapi-libs-transitional"
   "xapi-inventory"
-  "xapi-stdext"
+  "xapi-stdext" {< "2.0.0"}
   "xapi-forkexecd"
   "xenctrl"
   "xenstore_transport"
