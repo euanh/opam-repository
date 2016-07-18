@@ -1,5 +1,9 @@
 opam-version: "1.2"
-maintainer: "john.else@citrix.com"
+maintainer: "xen-api@lists.xen.org"
+authors: ["John Else"]
+homepage: "https://xapi-project.github.io/"
+bug-reports: "https://github.com/xapi-project/ocaml-rrdd-plugin/issues"
+dev-repo: "git://github.com/xapi-project/ocaml-rrdd-plugin"
 build: make
 remove: [make "PREFIX=%{prefix}%" "uninstall"]
 depends: [
@@ -11,5 +15,4 @@ depends: [
   "xapi-rrd-transport"
   "ocamlbuild" {build}
 ]
-dev-repo: "git://github.com/xapi-project/ocaml-rrdd-plugin"
 install: [make "PREFIX=%{prefix}%" "install"]
