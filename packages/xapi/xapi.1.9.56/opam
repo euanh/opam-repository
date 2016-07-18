@@ -1,5 +1,9 @@
 opam-version: "1.2"
-maintainer: "dave.scott@citrix.com"
+maintainer: "xen-api@lists.xen.org"
+authors: ["The Xapi Project"]
+homepage: "https://xapi-project.github.io/"
+bug-reports: "https://github.com/xapi-project/xen-api/issues"
+dev-repo: "git://github.com/xapi-project/xen-api"
 build: [
   [
     "./configure"
@@ -64,5 +68,4 @@ depexts: [
   [["debian"] ["libpam-dev"]]
   [["ubuntu"] ["libpam-dev"]]
 ]
-dev-repo: "git://github.com/xapi-project/xen-api"
 install: ["install" "-m" "0755" "ocaml/xapi/xapi.opt" "%{bin}%/xapi"]
