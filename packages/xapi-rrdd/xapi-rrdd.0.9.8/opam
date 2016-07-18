@@ -1,5 +1,9 @@
 opam-version: "1.2"
-maintainer: "john.else@eu.citrix.com"
+maintainer: "xen-api@lists.xen.org"
+authors: ["John Else"]
+homepage: "https://xapi-project.github.io/"
+bug-reports: "https://github.com/xapi-project/xcp-rrdd/issues"
+dev-repo: "git://github.com/xapi-project/xcp-rrdd"
 build: make
 remove: [make "uninstall" "BINDIR=%{bin}%" "SBINDIR=%{bin}%" "LIBEXECDIR=%{bin}%" "SCRIPTSDIR=%{bin}%" "ETCDIR=%{prefix}%/etc"]
 depends: [
@@ -19,7 +23,6 @@ depends: [
   "oclock"
   "ocamlbuild" {build}
 ]
-dev-repo: "git://github.com/xapi-project/xcp-rrdd"
 available: ocaml-version >= "4.01.0"
 install: [
   make
