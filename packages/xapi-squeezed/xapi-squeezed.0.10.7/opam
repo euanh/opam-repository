@@ -1,5 +1,9 @@
 opam-version: "1.2"
-maintainer: "dave.scott@eu.citrix.com"
+maintainer: "xen-api@lists.xen.org"
+authors: ["Dave Scott"]
+homepage: "https://xapi-project.github.io/"
+bug-reports: "https://github.com/xapi-project/squeezed/issues"
+dev-repo: "git://github.com/xapi-project/squeezed"
 build: [
   ["./configure" "--prefix" prefix]
   [make]
@@ -19,5 +23,4 @@ depends: [
   "xenctrl" {>= "0.9.20"}
   "ocamlbuild" {build}
 ]
-dev-repo: "git://github.com/xapi-project/squeezed"
 install: [make "install" "BINDIR=%{bin}%" "ETCDIR=%{prefix}%/etc"]
