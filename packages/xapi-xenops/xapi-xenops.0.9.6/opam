@@ -1,5 +1,9 @@
 opam-version: "1.2"
-maintainer: "john.else@citrix.com"
+maintainer: "xen-api@lists.xen.org"
+authors: ["John Else"]
+homepage: "https://xapi-project.github.io/"
+bug-reports: "https://github.com/xapi-project/xenops/issues"
+dev-repo: "git://github.com/xapi-project/xenops"
 build: make
 remove: [
   [make "PREFIX=%{prefix}%" "BINDIR=%{bin}%" "uninstall"]
@@ -13,6 +17,5 @@ depends: [
   "xenstore_transport"
   "ocamlbuild" {build}
 ]
-dev-repo: "git://github.com/xapi-project/xenops"
 available: ocaml-version >= "4.01.0"
 install: [make "PREFIX=%{prefix}%" "BINDIR=%{bin}%" "install"]
